@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - feature
+  pull_request:
+    branches:
+      - feature
 
 jobs:
   test:
@@ -14,4 +17,4 @@ jobs:
 
       # Different steps for the feature branch
       - name: Run different tests - FEATURE
-        run: echo "Running tests for FEATURE"
+        run: echo "Running tests for FEATURE 123"
