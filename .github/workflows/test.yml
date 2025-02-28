@@ -1,9 +1,9 @@
-name: Run tests on main
+name: Run tests on feature
 
 on:
   push:
     branches:
-      - main
+      - feature
 
 jobs:
   test:
@@ -12,6 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Additional steps for the main branch
-      - name: Run tests
-        run: echo "Running tests for main branch"
+      # Different steps for the feature branch
+      - name: Run different tests
+        run: echo "Running tests for feature branch"
